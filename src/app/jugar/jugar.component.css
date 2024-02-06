@@ -1,0 +1,117 @@
+/* Application-wide Styles */
+h1 {
+    color: rgb(100, 26, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-family: lighter;
+    font-weight: bold;
+    position:relative;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: lighter;
+    font-weight: bold;
+    text-align: justify;
+  }
+  h4 {
+    color: rgb(100, 26, 141);
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align:center ;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[type="text"], button {
+    color: #323232;
+    font-family: Cambria, Georgia;
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.contenedor {
+    display: flex;
+   }
+
+/* Estilo para el video: 100% de ancho y alto para cubrir toda la ventana */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Estilo para el texto superpuesto: posicionado absolutamente en el centro del video */
+  .overlay-text {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(229, 199, 243, 0.93);
+    padding: 255px;
+    width: 120px;
+    border-radius: 25px;
+  }
+  
+button {
+  background-color: rgb(164, 94, 211) !important;
+  padding: 20px;
+  border-radius: 18px;
+  width: 120px;
+  text-align: center;
+  margin-right: 10px;
+  color: white; /* Color del texto */
+  font-size: 18px; /* Tamaño del texto */
+  border: none; /* Elimina el borde */
+}
+
+
+.buttons-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.word-container {
+  display: flex;
+  justify-content: center;
+}
+
+.letter-placeholder {
+  margin-right: 5px; /* Ajusta el valor según tu preferencia */
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+.input-container input {
+  width: 190px; /* Ajusta el ancho según tus preferencias */
+  text-align: center;
+  padding: 10px;
+  font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
+  border-radius: 20px;
+  border: none;
+}
