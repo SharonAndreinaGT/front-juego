@@ -76,8 +76,13 @@ button {
   color: white; /* Color del texto */
   font-size: 18px; /* Tamaño del texto */
   border: none; /* Elimina el borde */
+  cursor: pointer; /* altera el cursor al pasarlo encima del boton */
+  transition: background-color 0.5s;
 }
 
+.button:hover {
+  background-color: rgb(100, 26, 141) !important;
+}
 
 .buttons-container {
     position: absolute;
