@@ -10,14 +10,15 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="word-container">
-                        <span *ngFor="let letra of palabraOcultaArray" class="letter-placeholder">_</span>
+                        <span *ngFor="let letra of palabraOcultaArray" class="letter-placeholder">{{letra}}</span>
                     </div>
                     <div class="input-container mt-3">
                         <input type="text" [(ngModel)]="letraIngresada" class="form-control" placeholder="Ingrese una letra" minlength="1" maxlength="1">
                     </div>
                     <div class="buttons-container mt-3">
                         <button  type="button"  mat-raised-button  class="button" routerLink="/inicio" >Salir</button>
-                        <button  type="button"  mat-raised-button  class="button">Enviar</button>
+                        <button  type="button" (click)=verificarLetra() mat-raised-button class="button" *ngIf="!adivinado">Enviar</button>
+                        <button  type="button" (click)=reiniciarJuego() mat-raised-button class="button" *ngIf="adivinado">Reiniciar</button>
                     </div>
                 </div>
                 <div class="col-md-6">
